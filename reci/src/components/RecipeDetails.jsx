@@ -21,7 +21,7 @@ const RecipeDetail = () => {
   useEffect(() => {
     const fetchRecipeDetails = async () => {
       const response = await fetch(
-        `https://api.edamam.com/api/recipes/v2/${id}?type=public&app_id=a36c7786&app_key=211aa4b8a5ef1ac7e51a7631baea82a1`
+        `https://api.edamam.com/api/recipes/v2/${id}?type=public&app_id=your_app_id&app_key=your_app_key`
       );
       const data = await response.json();
       setRecipe(data.recipe);
