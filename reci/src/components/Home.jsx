@@ -10,7 +10,7 @@ const Home = () => {
   
   const fetchRecipes = async (query='pasta') => {
     const response = await fetch(
-      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=a36c7786&app_key=211aa4b8a5ef1ac7e51a7631baea82a1	`
+      `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=your_appid&app_key=your_app_key	`
     );
     const data = await response.json();
     console.log(data);
